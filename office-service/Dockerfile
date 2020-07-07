@@ -1,12 +1,11 @@
 FROM node:lts-alpine3.10
 
-WORKDIR /level1-project/
+WORKDIR /usr/src/app
 
-COPY . /level1-project/
+COPY . .
 
 RUN npm install
 
-EXPOSE 8084
+EXPOSE 80
 
-CMD ["index.js"]
-
+CMD ["node","index.js"]
