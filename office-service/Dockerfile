@@ -6,7 +6,7 @@ COPY . /level1-project/
 
 RUN npm install
 
-EXPOSE 8084
+EXPOSE 80
 
 CMD ["index.js"]
 
